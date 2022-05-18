@@ -1,0 +1,14 @@
+nav {
+    background-color: rgb(242, 237, 248);
+    margin-bottom: 70px;
+}
+
+nav a {
+    color: rgb(49, 17, 167);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
