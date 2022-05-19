@@ -1,0 +1,11 @@
+.card {
+    height: 400px;
+    position: relative;
+}
+
+.card .btn {
+    position: absolute;
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+}

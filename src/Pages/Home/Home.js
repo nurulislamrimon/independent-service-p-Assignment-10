@@ -39,7 +39,7 @@ const Home = () => {
                     </Carousel.Item>
                 </Carousel>
             </section>
-            <section className="services-container">
+            <section className="services-container mb-3">
                 <h1 className='text-center mt-3'>I love to work for people</h1>
                 <div className='d-grid justify-content-center services-items-container'>
                     {datas.map((data) => <Service key={data._id} data={data}></Service>)}
