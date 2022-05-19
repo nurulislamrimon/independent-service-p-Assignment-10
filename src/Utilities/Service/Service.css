@@ -3,9 +3,14 @@
     position: relative;
 }
 
+.card:hover {
+    box-shadow: 1px 1px 30px 1px black;
+}
+
 .card .btn {
     position: absolute;
     bottom: 1px;
     left: 0;
-    width: 100%;
+    right: 0;
+    width: 99.5%;
 }
