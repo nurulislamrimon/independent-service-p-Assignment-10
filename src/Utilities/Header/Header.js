@@ -25,7 +25,7 @@ const Header = () => {
                                 <CustomLink to="/login">Log in</CustomLink>
                                 <CustomLink to="/signup">Sign up</CustomLink> </>
                                 :
-                                <button onClick={() => signOut(auth)} className='logout-btn'>Log out</button>}
+                                <p onClick={() => signOut(auth)} className='logout-btn '>Log out</p>}
                         </div>
                     </Navbar.Collapse>
                 </Container>

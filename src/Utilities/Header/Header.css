@@ -21,4 +21,5 @@ nav a:hover,
 .logout-btn {
     color: rgb(49, 17, 167);
     border: none;
+    cursor: pointer;
 }

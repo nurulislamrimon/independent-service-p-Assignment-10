@@ -24,6 +24,11 @@
   color: red;
 }
 
+.reset-link {
+  color: blue;
+  cursor: pointer;
+}
+
 .toggle-link {
   color: blue;
   cursor: pointer;
