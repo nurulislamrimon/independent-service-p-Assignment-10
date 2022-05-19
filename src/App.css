@@ -19,3 +19,12 @@
   align-items: center;
   justify-content: center;
 }
+
+.warning {
+  color: red;
+}
+
+.toggle-link {
+  color: blue;
+  cursor: pointer;
+}
