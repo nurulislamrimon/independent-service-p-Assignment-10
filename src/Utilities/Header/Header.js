@@ -10,7 +10,7 @@ const Header = () => {
         <nav>
             <Navbar collapseOnSelect expand="lg" fixed='top'>
                 <Container>
-                    <Link to="/"><img src={logo} alt="" width={['40px']} /></Link>
+                    <Link to="/"><h2 className='title'>The man</h2></Link>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <div className="ms-auto d-flex justify-content-between w-50 flex-column flex-lg-row">

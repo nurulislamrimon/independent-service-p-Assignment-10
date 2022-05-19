@@ -1,10 +1,13 @@
 import React from 'react';
+import './Footer.css';
 
 const Footer = () => {
+    const date = new Date();
+    const year = date.getFullYear();
     return (
-        <div>
-            Footer
-        </div>
+        <footer className='py-3 text-center'>
+            &copy; All right reserved {year}
+        </footer>
     );
 };
 

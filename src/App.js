@@ -7,6 +7,7 @@ import Blogs from './Pages/Blogs/Blogs';
 import About from './Pages/About/About';
 import Login from './Pages/Login/Login';
 import Signup from './Pages/Signup/Signup';
+import Checkout from './Pages/Checkout/Checkout';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Home></Home>}></Route>
+        <Route path='/checkout/:id' element={<Checkout></Checkout>}></Route>
       </Routes>
       <Footer></Footer>
     </div>
