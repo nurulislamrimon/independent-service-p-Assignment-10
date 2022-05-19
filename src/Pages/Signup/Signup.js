@@ -1,14 +1,24 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import SocialLogin from '../../Utilities/SocialLogin/SocialLogin';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
     const [check, setCheck] = useState(false);
-    console.log(check);
+    const [user] = useAuthState(auth);
+    const navigate = useNavigate();
+    const location = useLocation();
+    let from = location.state?.from?.pathname || "/";
+    const formSubmit = (e) => {
+        e.preventDefault();
+    }
+    user && navigate(from, { replace: true })
     return (
         <div className='form-container mx-auto p-5'>
             <h1 className='text-center'>Sign up</h1>
-            <Form>
+            <Form onSubmit={formSubmit}>
                 <SocialLogin></SocialLogin>
                 <div className="d-flex align-items-center mt-2">
                     <hr className='w-50' /> <span className='px-2'>or</span> <hr className='w-50' />

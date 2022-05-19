@@ -11,3 +11,11 @@
 .title {
   font-family: 'Smooch', cursive;
 }
+
+.spinner-container {
+  height: 85vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
