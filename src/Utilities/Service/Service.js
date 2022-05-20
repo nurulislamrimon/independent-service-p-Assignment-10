@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './Service.css'
 
 const Service = (props) => {
-    const { _id, title, picture, description } = props.data;
+    const { title, picture, description } = props.data;
     const navigate = useNavigate();
     return (
         <Card style={{ width: '18rem' }} className='my-3'>
@@ -14,7 +14,7 @@ const Service = (props) => {
                 <Card.Text>
                     {description}
                 </Card.Text>
-                <button className='mx-auto d-block btn btn-dark' onClick={() => navigate(`/checkout/${_id}`)}>Book this service</button>
+                <button className='mx-auto d-block btn btn-dark' onClick={() => navigate(`/checkout/${title}`)}>Book this service</button>
             </Card.Body>
         </Card>
     );
